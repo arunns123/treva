@@ -551,12 +551,41 @@ button.navbar-toggler {
   background-color: #03062F;
 }
 
+@media only screen and (max-width: 1400px) {
+
+    div#navbarSupportedContent23 {
+        padding-left: 4%;
+        padding-bottom: 10px;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    
+.navbar-top-block {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+    
+}
+
 @media only screen and (max-width: 1200px) {
     nav.navbar.navbar-expand-md.navbar-dark.teal.no-border {
         flex-wrap: wrap;
         padding: .5rem 0rem;
-        justify-content: flex-end;
+        margin-top: 20px;
     }
+.navbar-top-block {
+
+    top: -10px;
+}
+    
 }
 
 
@@ -571,11 +600,16 @@ button.navbar-toggler {
 @media only screen and (max-width: 991px) {
 
 
-    nav.navbar.navbar-expand-md.navbar-dark.teal.no-border {
-        flex-wrap: wrap;
-        padding: .5rem 0rem;
-        justify-content: flex-start;
-    }
+nav.navbar.navbar-expand-md.navbar-dark.teal.no-border {
+    flex-wrap: wrap;
+    padding: .5rem 0rem;
+    margin-top: 40px;
+}
+    
+.navbar-top-block {
+    top: -30px;
+} 
+    
     .navbar-nav {
         padding: 15px 0px;
     } 
@@ -610,7 +644,10 @@ nav.navbar.navbar-expand-md.navbar-dark.teal.no-border {
     
 }
 
-
+button:focus {
+    outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
 
 
 
@@ -1093,6 +1130,10 @@ span.psw {
     .home_banner_text {
         width: 100%;
     }
+.home-banner-bottom {
+    margin-top: -2px;
+}
+    
 }
 
 
@@ -1439,7 +1480,6 @@ label > input[type="radio"] + * {
     margin-top: 30px;
 }
 
-
 .single-block ul li {
     font-style: normal;
     font-weight: normal;
@@ -1447,6 +1487,7 @@ label > input[type="radio"] + * {
     line-height: 24px;
     color: #34393A;
     padding-bottom: 14px;
+    display: flex;
 }
 .single-block ul li i {
     color: #00BA74;
