@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="css/flag-icon.min.css" />
    
-       <link rel="stylesheet" href="css/owl.carousel.css" />
+       <link rel="stylesheet" href="css/flexslider.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
         <link rel="stylesheet" href="css/aos.css" />
     
@@ -78,7 +78,10 @@
                             <div class="navbar-top-block">
                                 
                             <div class="country-selector">
-                               <img src="img/United_States.svg">
+                                
+                              <i class="flag flag-US"></i>
+                            </div>
+                                
                             </div>
 
                             <div class="navbar-button-block">
@@ -87,7 +90,7 @@
                                 <button class="sig-up-btn" onclick="" style="width:auto;">Sign Up  <i class="fa fa-long-arrow-right arrow1" aria-hidden="true"></i></button>
                                 
                             </div>
-                            </div>
+                            
                             
                         </nav>
                             
@@ -232,18 +235,46 @@
     
                         <div class="product-slider outer" data-aos="fade-up" data-aos-duration="500">
                         
-                            <div id="sync1" class="owl-carousel">
-                                <div class="item"><div class="product-item-img"><img src="img/product_01.jpg"></div></div>
-                                <div class="item"><div class="product-item-img"><img src="img/product_02.jpg"></div></div>
-                                <div class="item"><div class="product-item-img"><img src="img/product_03.jpg"></div></div>
-                                <div class="item"><div class="product-item-img"><img src="img/product_04.jpg"></div></div>
-                                <div class="item"><div class="product-item-img"><img src="img/product_05.jpg"></div></div>
-                                <div class="item"><div class="product-item-img"><img src="img/product_06.jpg"></div></div>
-                                <div class="item"><div class="product-item-img"><img src="img/product_07.jpg"></div></div>
-                                <div class="item"><div class="product-item-img"><img src="img/product_08.jpg"></div></div>
-
-                            </div>
-
+                            
+                            
+                    <!-- Place somewhere in the <body> of your page -->
+                    <div class="flexslider">
+                      <ul class="slides">
+                        <li data-thumb="img/product_01.jpg">
+                          <div class="item"><div class="product-item-img"><img src="img/product_01.jpg"></div></div>
+                        </li>
+                        <li data-thumb="img/product_02.jpg">
+                          <div class="item"><div class="product-item-img"><img src="img/product_02.jpg"></div></div>
+                        </li>
+                        <li data-thumb="img/product_03.jpg">
+                          <div class="item"><div class="product-item-img"><img src="img/product_03.jpg"></div></div>
+                        </li>
+                        <li data-thumb="img/product_04.jpg">
+                           <div class="item"><div class="product-item-img"><img src="img/product_04.jpg"></div></div>
+                        </li>
+                          
+                        <li data-thumb="img/product_05.jpg">
+                           <div class="item"><div class="product-item-img"><img src="img/product_05.jpg"></div></div>
+                        </li>
+                          
+                         <li data-thumb="img/product_06.jpg">
+                           <div class="item"><div class="product-item-img"><img src="img/product_06.jpg"></div></div>
+                        </li>
+                          
+                        <li data-thumb="img/product_07.jpg">
+                           <div class="item"><div class="product-item-img"><img src="img/product_07.jpg"></div></div>
+                        </li>
+                          
+                           <li data-thumb="img/product_08.jpg">
+                           <div class="item"><div class="product-item-img"><img src="img/product_08.jpg"></div></div>
+                        </li>
+                          
+                      </ul>
+                        
+                        
+                    </div>
+                            
+                            
                             
                         </div> 
                     
@@ -335,7 +366,6 @@
                                         
                                       </span>
                               </label>
-                            
                                 </div>
                             </div>
                             
@@ -411,7 +441,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
 
-<script src="js/owl.carousel.js"></script> 
+<script src="js/jquery.flexslider.js"></script> 
     
 
 
@@ -458,24 +488,13 @@ document.querySelectorAll('.add-to-cart-button').forEach(function(addToCartButto
  
 <script>
 
-$('.owl-carousel').owlCarousel({
-    loop:true,
-     nav: true,
-    autoplay:true,
-    autoplayTimeout:5000,
-    margin:10,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
+// Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+  });
+});
 </script>
     
 
