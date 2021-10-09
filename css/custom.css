@@ -896,7 +896,14 @@ input[type=text], input[type=password] {
     margin: 0 10px;
     color: #fff;
     font-weight: 600;
+    transition: .25s;
 }
+
+.log-in-btn:hover{
+    transition: .25s;
+    background-color: #2B83EA;
+}
+
 .sig-up-btn {
     background: #FFFFFF;
     border: 1px solid #EDEDED;
@@ -906,6 +913,13 @@ input[type=text], input[type=password] {
     margin: 0 10px;
     color: #2B83EA;
     font-weight: 600;
+    transition: .25s;
+}
+
+.sig-up-btn:hover{
+    transition: .25s;
+    background-color: #2B83EA;
+    color: #fff;
 }
 
 
@@ -1071,7 +1085,15 @@ span.psw {
     color: #fff;
     font-weight: 600;
     margin-top: 10px;
+    transition: .25s;
 }
+
+.home-sig-up-btn:hover{
+    transition: .25s;
+    background: #FFFFFF;
+    color: #2B83EA;
+}
+
 
 .home_banner_img img {
     width: 80%;
@@ -1324,7 +1346,7 @@ label > input[type="radio"] + * {
     display: flex;
     font-family: "Ubuntu", sans-serif;
     justify-content: space-around;
-    min-width: 80%;
+    min-width: 28%;
     overflow: hidden;
     outline: none;
     padding: 0.7rem;
@@ -1496,8 +1518,6 @@ label > input[type="radio"] + * {
 }
 
 
-
-
 .flex-direction-nav {
     display: flex;
     justify-content: space-between;
@@ -1510,11 +1530,4 @@ label > input[type="radio"] + * {
 .flex-control-nav.flex-control-thumbs {
     display: flex;
 }
-
-
-
-
-
-
-
 
